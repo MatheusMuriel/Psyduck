@@ -1,7 +1,159 @@
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSauce;
+  src: url(../fonts/OpenSauce/OpenSauceOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: AdventPro;
+  src: url(../fonts/AdventPro/AdventPro-Regular.ttf);
+}
+
 body {
-    background-color: aqua;
+  background: rgb(255,251,239);
+  background: linear-gradient(90deg, rgba(255,251,239,1) 0%, rgba(82,195,190,1) 78%);
+  margin-left: 76px;
+  margin-right: 76px;
 }
 
 .page_header {
-    background-color: aliceblue;
+  /* background-color: aliceblue; */
+  font-family: OpenSauce;
+  font-size: 15px;
+  color: #2aa5b2;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page_header_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header_text {
+  justify-content: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.right_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.circle {
+  width: 42px;
+  height: 42px;
+  -webkit-border-radius: 21px;
+  -moz-border-radius: 21px;
+  border-radius: 21px;
+  background: #287777;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.circle i {
+  align-self: center;
+  color: #7fd2cb;
+}
+
+.social_network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  font-size: 32px;
+  gap: 10px;
+}
+
+.contact_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact_button button {
+  font-family: PoppinsLight;
+  font-size: 12px;
+  font-weight: bold;
+  color: #287777;
+  background-color: #fffbef;
+  width: 190px;
+  height: 46px;
+  -webkit-border-radius: 95px;
+  border-radius: 95px;
+  border: none;
+  text-align: center;
+}
+
+.main_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_block .left_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.main_block .left_block p {
+  font-family: AdventPro;
+  font-size: 23px;
+  font-weight: bold;
+  color: #2aa5b2;
+}
+
+.main_block .left_block button {
+  font-family: AdventPro;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e9e8e9;
+  background-color: #e36849;
+  width: 190px;
+  height: 46px;
+  -webkit-border-radius: 95px;
+  border-radius: 95px;
+  border: none;
+  text-align: center;
+  align-self: center;
+}
+
+.main_block .right_block img {
+  height: 590px;
+  width: 453px;
+  
+  clip-path: path("M 383.52 0 v 321.74 c 0 98.44 -85.84 178.25 -191.74 178.26 h -0.04 C 85.88 499.99 0.05 420.23 0 321.83 V 0 c 60.84 16.52 125.19 25.38 191.76 25.38 C 258.34 25.38 322.69 16.52 383.52 0 Z");
+}
+
+.header {
+  font-family: PoppinsLight;
+  font-size: 48px;
+  color: #2aa5b2;
+}
+
+.horizontal_bar {
+  height: 2px;
+  width: 100%;
+  border-width: 0;
+  color: #2aa5b2;
+  background-color: #2aa5b2;
 }
